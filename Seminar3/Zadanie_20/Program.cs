@@ -16,4 +16,5 @@ Console.Write("Х: ");
 int x2 = int.Parse(Console.ReadLine());
 Console.Write("Y: ");
 int y2 = int.Parse(Console.ReadLine());
-Console.Write($"Расстояние между точками: {Math.Round(Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)), 2)}");
+Console.Write($"Расстояние между точками: {Math.Round(Math.Sqrt
+(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)), 2)}");
