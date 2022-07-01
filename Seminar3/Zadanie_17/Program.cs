@@ -10,5 +10,5 @@ int y = Convert.ToInt32(Console.ReadLine());
 if (x > 0 && y > 0) Console.Write("Первая четверть");
 else if (x < 0 && y > 0) Console.Write("Вторая четверть");
 else if (x < 0 && y < 0) Console.Write("Третья четверть");
-else if (x > 0 && y < 0) Console.Write("Четвёртая четверть"); 
-else Console.Write("Координаты не корректны"); 
+else if (x > 0 && y < 0) Console.Write("Четвёртая четверть");
+else Console.Write("Координаты не корректны");
