@@ -21,7 +21,10 @@ int[] Rezhenie(int[] array)
 {
     Console.Write(" -> ");
     int pro = 0;
-    int[] mas = new int[(array.Length/2+1)];
+    int x = 0;
+    if(num % 2 == 1) x = num + 1;
+    if(num % 2 == 0) x = num;
+    int[] mas = new int[(x/2)];
     for(int i = 0; i < array.Length/2; i++)
     {
         pro = array[i] * array[array.Length - 1 - i];
