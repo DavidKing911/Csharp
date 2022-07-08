@@ -18,16 +18,12 @@ double[] Array(int num)
 
 double Rezhenie(double[] array)
 {
-    double max = 0;
-    double min = 0;
+    double max = array[0];
+    double min = array[0];
     double result = 0;
     for(int i = 0; i < array.Length; i++)
     {
         if (array[i] > max) max = array[i];
-        else min = array[i];
-    }
-    for(int i = 0; i < array.Length; i++)
-    {
         if (array[i] < min) min = array[i];
     }
     Math.Round(result = max - min,1);
