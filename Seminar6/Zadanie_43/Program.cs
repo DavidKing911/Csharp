@@ -16,12 +16,10 @@ double k2 = Convert.ToInt32(Console.ReadLine());
 void Reshenie(double b_1, double k_1, double b_2, double k_2)
 {
     double x = 0;
-    double y1 = 0;
-    double y2 = 0;
-    x = (b_2 - b_1)/(k_1 - k_2);
-    y1 = Math.Round(k_1 * x + b_1, 1);
-    y2 = Math.Round(k_2 * x + b_2, 1);
-    Console.Write($"Точка пересечения двух прямых -> ({y1}; {y2})");
+    double y = 0;
+    x = Math.Round((b_2 - b_1)/(k_1 - k_2), 1);
+    y = Math.Round(k_1 * x + b_1, 1);
+    Console.Write($"Точка пересечения двух прямых -> ({x}; {y})");
 }
 
 Reshenie(b1, k1, b2, k2);
